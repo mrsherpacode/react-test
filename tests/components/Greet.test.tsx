@@ -1,10 +1,8 @@
 // renders React components for testing
 // screen — queries the rendered component to find elements
 import { render, screen } from "@testing-library/react";
-import { it, expect, describe } from "vitest";
 import Greet from "../../src/components/Greet";
-// Adds extra matchers like toBeInTheDocument() and toHaveTextContent().
-import "@testing-library/jest-dom/vitest";
+// Adds extra matchers like toBeInTheDocument() and toHaveTextContent(). //
 
 describe("Greet", () => {
   it("should render hello with the name when the name is provided ", () => {
